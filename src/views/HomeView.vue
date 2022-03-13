@@ -1,6 +1,5 @@
 <template>
   <div>
-    <el-button @click="handleRedirect('Areas')">Search by Areas</el-button>
     <el-button @click="handleRedirect('Ingredients')"
       >Search by Ingredients</el-button
     >

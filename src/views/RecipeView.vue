@@ -26,7 +26,11 @@
           <ul>
             <li v-for="ingredient in ingredients" :key="ingredient.ingredient">
               {{ ingredient.ingredient }}
-              <span v-if="ingredient.measure.trim().length > 0">
+              <span
+                v-if="
+                  ingredient.measure && ingredient.measure.trim().length > 0
+                "
+              >
                 - {{ ingredient.measure }}</span
               >
             </li>
