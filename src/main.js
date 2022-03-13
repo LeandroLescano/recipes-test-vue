@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import "element-plus/dist/index.css";
 
-createApp(App).mount('#app')
+import App from "./App.vue";
+import ElementPlus from "element-plus";
+import { createApp } from "vue";
+import router from "./router";
+
+createApp(App).use(router).use(ElementPlus).mount("#app");
